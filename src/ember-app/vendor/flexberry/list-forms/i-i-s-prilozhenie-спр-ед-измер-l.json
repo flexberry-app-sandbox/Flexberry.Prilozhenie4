@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-спр-ед-измер-e",
+  "editForm": "i-i-s-prilozhenie-спр-ед-измер-e",
+  "external": false,
+  "caption": "Спр ед измер",
+  "name": "IISPrilozhenieСпрЕдИзмерL",
+  "className": "СпрЕдИзмерL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-спр-ед-измер",
+      "modelProjection": "СпрЕдИзмерL"
+    }
+  ]
+}

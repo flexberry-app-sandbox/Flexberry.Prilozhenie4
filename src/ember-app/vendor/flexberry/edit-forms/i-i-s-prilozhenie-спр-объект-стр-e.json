@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Спр объект стр",
+  "name": "IISPrilozhenieСпрОбъектСтрE",
+  "className": "СпрОбъектСтрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-спр-объект-стр",
+      "modelProjection": "СпрОбъектСтрE"
+    }
+  ]
+}

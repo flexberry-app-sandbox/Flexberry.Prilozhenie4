@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрКонтрАг",
+      "projection": "СпрКонтрАгL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СпрОбъектСтр",
+      "projection": "СпрОбъектСтрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Док план за на Д",
+  "name": "IISPrilozhenieДокПланЗаНаДE",
+  "className": "ДокПланЗаНаДE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-док-план-за-на-д",
+      "modelProjection": "ДокПланЗаНаДE"
+    }
+  ]
+}

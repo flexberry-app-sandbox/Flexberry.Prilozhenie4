@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Спр ед измер",
+  "name": "IISPrilozhenieСпрЕдИзмерE",
+  "className": "СпрЕдИзмерE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-спр-ед-измер",
+      "modelProjection": "СпрЕдИзмерE"
+    }
+  ]
+}

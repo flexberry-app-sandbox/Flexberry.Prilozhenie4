@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-спр-виды-раб-e",
+  "editForm": "i-i-s-prilozhenie-спр-виды-раб-e",
+  "external": false,
+  "caption": "Спр виды раб",
+  "name": "IISPrilozhenieСпрВидыРабL",
+  "className": "СпрВидыРабL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-спр-виды-раб",
+      "modelProjection": "СпрВидыРабL"
+    }
+  ]
+}

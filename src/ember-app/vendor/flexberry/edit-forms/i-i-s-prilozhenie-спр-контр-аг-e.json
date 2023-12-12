@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Спр контр аг",
+  "name": "IISPrilozhenieСпрКонтрАгE",
+  "className": "СпрКонтрАгE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-спр-контр-аг",
+      "modelProjection": "СпрКонтрАгE"
+    }
+  ]
+}

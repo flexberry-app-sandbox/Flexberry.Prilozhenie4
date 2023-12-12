@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Спр тип транс ср",
+  "name": "IISPrilozhenieСпрТипТрансСрE",
+  "className": "СпрТипТрансСрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-спр-тип-транс-ср",
+      "modelProjection": "СпрТипТрансСрE"
+    }
+  ]
+}

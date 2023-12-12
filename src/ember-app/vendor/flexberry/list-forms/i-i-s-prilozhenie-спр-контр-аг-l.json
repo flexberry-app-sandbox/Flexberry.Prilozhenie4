@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-спр-контр-аг-e",
+  "editForm": "i-i-s-prilozhenie-спр-контр-аг-e",
+  "external": false,
+  "caption": "Спр контр аг",
+  "name": "IISPrilozhenieСпрКонтрАгL",
+  "className": "СпрКонтрАгL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-спр-контр-аг",
+      "modelProjection": "СпрКонтрАгL"
+    }
+  ]
+}

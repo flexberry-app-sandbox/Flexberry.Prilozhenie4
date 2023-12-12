@@ -1,0 +1,78 @@
+﻿{
+  "applicationCaption": "Prilozhenie",
+  "applicationTitle": "Prilozhenie",
+  "items": [
+    {
+      "link": null,
+      "menuName": "prilozhenie",
+      "caption": "Prilozhenie",
+      "title": "Prilozhenie",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-спр-контр-аг-l",
+          "menuName": null,
+          "caption": "Справочник контрагенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-спр-тип-транс-ср-l",
+          "menuName": null,
+          "caption": "Справочник типы транспортного средства",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-спр-пользов-l",
+          "menuName": null,
+          "caption": "Справочник пользователи",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-спр-виды-раб-l",
+          "menuName": null,
+          "caption": "Справочник виды работ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-спр-объект-стр-l",
+          "menuName": null,
+          "caption": "Справочник объекты строительства",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-спр-номен-l",
+          "menuName": null,
+          "caption": "Справочник номенклатура",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-спр-ед-измер-l",
+          "menuName": null,
+          "caption": "Справочник единицы измерения",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-спр-трансп-ср-l",
+          "menuName": null,
+          "caption": "Справочник транспортные средства",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-док-план-за-на-д-l",
+          "menuName": null,
+          "caption": "Документ плановая заявка на день",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
