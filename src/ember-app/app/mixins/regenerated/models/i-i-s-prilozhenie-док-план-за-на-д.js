@@ -69,9 +69,8 @@ export let defineProjections = function (modelClass) {
       наименование: attr('Объект строительства', { index: 6 })
     }, { index: 5 }),
     спрПользов: belongsTo('i-i-s-prilozhenie-спр-пользов', 'Автор', {
-      фИО: attr('Автор', { index: 8 }),
-      должность: attr('Должность', { index: 9 })
-    }, { index: 7, displayMemberPath: 'автор' })
+      фИО: attr('Автор', { index: 8 })
+    }, { index: 7 })
   });
 
   modelClass.defineProjection('ДокПланЗаНаДL', 'i-i-s-prilozhenie-док-план-за-на-д', {
@@ -85,8 +84,7 @@ export let defineProjections = function (modelClass) {
       наименование: attr('Объект строительства', { index: 4 })
     }, { index: -1, hidden: true }),
     спрПользов: belongsTo('i-i-s-prilozhenie-спр-пользов', 'Автор', {
-      фИО: attr('Автор', { index: 5 }),
-      должность: attr('Должность', { index: 6 })
+      фИО: attr('Автор', { index: 5 })
     }, { index: -1, hidden: true })
   });
 };
