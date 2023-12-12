@@ -18,6 +18,7 @@ moduleForModel('i-i-s-prilozhenie-спр-объект-стр', 'Unit | Serialize
     'model:i-i-s-prilozhenie-спр-пользов',
     'model:i-i-s-prilozhenie-спр-тип-транс-ср',
     'model:i-i-s-prilozhenie-спр-трансп-ср',
+    'model:i-i-s-prilozhenie-т-ч-пл-за-на-д',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

@@ -39,6 +39,8 @@ namespace IIS.Prilozhenie
             "СпрОбъектСтр.Наименование as \'Объект строительства\'",
             "СпрПользов as \'Автор\'",
             "СпрПользов.ФИО as \'Автор\'"})]
+    [AssociatedDetailViewAttribute("ДокПланЗаНаДE", "ТЧПлЗаНаД", "ТчПлЗаНаДE", true, "", "План задач на день", true, new string[] {
+            ""})]
     [View("ДокПланЗаНаДL", new string[] {
             "Номер as \'Номер\'",
             "Дата as \'Дата\'",
@@ -60,6 +62,8 @@ namespace IIS.Prilozhenie
         private IIS.Prilozhenie.СпрОбъектСтр fСпрОбъектСтр;
         
         private IIS.Prilozhenie.СпрКонтрАг fСпрКонтрАг;
+        
+        private IIS.Prilozhenie.DetailArrayOfТЧПлЗаНаД fТЧПлЗаНаД;
         
         // *** Start programmer edit section *** (ДокПланЗаНаД CustomMembers)
 
@@ -259,6 +263,41 @@ namespace IIS.Prilozhenie
                 // *** Start programmer edit section *** (ДокПланЗаНаД.СпрПользов Set end)
 
                 // *** End programmer edit section *** (ДокПланЗаНаД.СпрПользов Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Док план за на Д.
+        /// </summary>
+        // *** Start programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД CustomAttributes)
+
+        // *** End programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД CustomAttributes)
+        public virtual IIS.Prilozhenie.DetailArrayOfТЧПлЗаНаД ТЧПлЗаНаД
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД Get start)
+
+                // *** End programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД Get start)
+                if ((this.fТЧПлЗаНаД == null))
+                {
+                    this.fТЧПлЗаНаД = new IIS.Prilozhenie.DetailArrayOfТЧПлЗаНаД(this);
+                }
+                IIS.Prilozhenie.DetailArrayOfТЧПлЗаНаД result = this.fТЧПлЗаНаД;
+                // *** Start programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД Get end)
+
+                // *** End programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД Set start)
+
+                // *** End programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД Set start)
+                this.fТЧПлЗаНаД = value;
+                // *** Start programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД Set end)
+
+                // *** End programmer edit section *** (ДокПланЗаНаД.ТЧПлЗаНаД Set end)
             }
         }
         

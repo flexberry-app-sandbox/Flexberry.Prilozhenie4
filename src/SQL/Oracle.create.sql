@@ -27,6 +27,41 @@ CREATE TABLE "СпрКонтрАг"
 ) ;
 
 
+CREATE TABLE "ТЧПлЗаНаД"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"СтЗатрат" NVARCHAR2(255) NULL,
+
+	"ОбъемРаботы" NVARCHAR2(255) NULL,
+
+	"ВрПрибытия" NVARCHAR2(255) NULL,
+
+	"КолЧасРаб" FLOAT(53) NULL,
+
+	"ОбГруз" FLOAT(53) NULL,
+
+	"ДатПрибыт" DATE NULL,
+
+	"СпрНомен" RAW(16) NOT NULL,
+
+	"СпрТранспСр" RAW(16) NOT NULL,
+
+	"СпрКонтрАг" RAW(16) NOT NULL,
+
+	"СпрТипТрансСр" RAW(16) NOT NULL,
+
+	"СпрВидыРаб" RAW(16) NOT NULL,
+
+	"СпрЕдИзмер" RAW(16) NOT NULL,
+
+	"ДокПланЗаНаД" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "СпрТипТрансСр"
 (
 
@@ -124,17 +159,19 @@ CREATE TABLE "СпрТранспСр"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"ВидПеревоз" NVARCHAR2(255) NULL,
-
 	"ГрузПодъемВТон" NVARCHAR2(255) NULL,
-
-	"Код" NUMBER(10) NULL,
 
 	"ГосНомер" NVARCHAR2(255) NULL,
 
+	"ВидПеревоз" NVARCHAR2(255) NULL,
+
 	"Марка" NVARCHAR2(255) NULL,
 
+	"Код" NUMBER(10) NULL,
+
 	"ЛицеКартНомер" NUMBER(10) NULL,
+
+	"Наименование" NVARCHAR2(255) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -358,6 +395,41 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "ТЧПлЗаНаД"
+	ADD CONSTRAINT "ТЧПлЗаНаД_FСп_1082" FOREIGN KEY ("СпрНомен") REFERENCES "СпрНомен" ("primaryKey");
+
+CREATE INDEX "ТЧПлЗаНаД_IСп_9086" on "ТЧПлЗаНаД" ("СпрНомен");
+
+ALTER TABLE "ТЧПлЗаНаД"
+	ADD CONSTRAINT "ТЧПлЗаНаД_FСп_4762" FOREIGN KEY ("СпрТранспСр") REFERENCES "СпрТранспСр" ("primaryKey");
+
+CREATE INDEX "ТЧПлЗаНаД_IСп_2537" on "ТЧПлЗаНаД" ("СпрТранспСр");
+
+ALTER TABLE "ТЧПлЗаНаД"
+	ADD CONSTRAINT "ТЧПлЗаНаД_FСп_6464" FOREIGN KEY ("СпрКонтрАг") REFERENCES "СпрКонтрАг" ("primaryKey");
+
+CREATE INDEX "ТЧПлЗаНаД_IСп_1630" on "ТЧПлЗаНаД" ("СпрКонтрАг");
+
+ALTER TABLE "ТЧПлЗаНаД"
+	ADD CONSTRAINT "ТЧПлЗаНаД_FСп_1500" FOREIGN KEY ("СпрТипТрансСр") REFERENCES "СпрТипТрансСр" ("primaryKey");
+
+CREATE INDEX "ТЧПлЗаНаД_IСп_7400" on "ТЧПлЗаНаД" ("СпрТипТрансСр");
+
+ALTER TABLE "ТЧПлЗаНаД"
+	ADD CONSTRAINT "ТЧПлЗаНаД_FСп_1187" FOREIGN KEY ("СпрВидыРаб") REFERENCES "СпрВидыРаб" ("primaryKey");
+
+CREATE INDEX "ТЧПлЗаНаД_IСп_5241" on "ТЧПлЗаНаД" ("СпрВидыРаб");
+
+ALTER TABLE "ТЧПлЗаНаД"
+	ADD CONSTRAINT "ТЧПлЗаНаД_FСп_3934" FOREIGN KEY ("СпрЕдИзмер") REFERENCES "СпрЕдИзмер" ("primaryKey");
+
+CREATE INDEX "ТЧПлЗаНаД_IСп_5982" on "ТЧПлЗаНаД" ("СпрЕдИзмер");
+
+ALTER TABLE "ТЧПлЗаНаД"
+	ADD CONSTRAINT "ТЧПлЗаНаД_FДок_734" FOREIGN KEY ("ДокПланЗаНаД") REFERENCES "ДокПланЗаНаД" ("primaryKey");
+
+CREATE INDEX "ТЧПлЗаНаД_IДо_1098" on "ТЧПлЗаНаД" ("ДокПланЗаНаД");
 
 ALTER TABLE "СпрВидыРаб"
 	ADD CONSTRAINT "СпрВидыРаб_FС_5946" FOREIGN KEY ("СпрЕдИзмер") REFERENCES "СпрЕдИзмер" ("primaryKey");

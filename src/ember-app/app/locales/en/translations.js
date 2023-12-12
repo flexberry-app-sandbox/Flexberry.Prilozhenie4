@@ -28,6 +28,7 @@ import IISPrilozhenieСпрОбъектСтрModel from './models/i-i-s-prilozhe
 import IISPrilozhenieСпрПользовModel from './models/i-i-s-prilozhenie-спр-пользов';
 import IISPrilozhenieСпрТипТрансСрModel from './models/i-i-s-prilozhenie-спр-тип-транс-ср';
 import IISPrilozhenieСпрТранспСрModel from './models/i-i-s-prilozhenie-спр-трансп-ср';
+import IISPrilozhenieТЧПлЗаНаДModel from './models/i-i-s-prilozhenie-т-ч-пл-за-на-д';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -42,7 +43,8 @@ $.extend(true, translations, {
     'i-i-s-prilozhenie-спр-объект-стр': IISPrilozhenieСпрОбъектСтрModel,
     'i-i-s-prilozhenie-спр-пользов': IISPrilozhenieСпрПользовModel,
     'i-i-s-prilozhenie-спр-тип-транс-ср': IISPrilozhenieСпрТипТрансСрModel,
-    'i-i-s-prilozhenie-спр-трансп-ср': IISPrilozhenieСпрТранспСрModel
+    'i-i-s-prilozhenie-спр-трансп-ср': IISPrilozhenieСпрТранспСрModel,
+    'i-i-s-prilozhenie-т-ч-пл-за-на-д': IISPrilozhenieТЧПлЗаНаДModel
   },
 
   'application-name': 'Prilozhenie',

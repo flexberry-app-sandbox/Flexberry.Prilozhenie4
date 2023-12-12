@@ -57,7 +57,13 @@
       "inverse": null
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "тЧПлЗаНаД",
+      "relatedTo": "i-i-s-prilozhenie-т-ч-пл-за-на-д",
+      "inverse": "докПланЗаНаД"
+    }
+  ],
   "projections": [
     {
       "name": "ДокПланЗаНаДE",
@@ -147,7 +153,15 @@
           "inverse": null
         }
       ],
-      "hasMany": []
+      "hasMany": [
+        {
+          "projectionName": "ТчПлЗаНаДE",
+          "caption": "План задач на день",
+          "name": "тЧПлЗаНаД",
+          "relatedTo": "i-i-s-prilozhenie-т-ч-пл-за-на-д",
+          "inverse": null
+        }
+      ]
     },
     {
       "name": "ДокПланЗаНаДL",

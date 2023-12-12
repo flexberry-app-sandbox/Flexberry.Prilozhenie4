@@ -7,7 +7,8 @@ export let Serializer = Mixin.create({
     let attrs = {
       спрКонтрАг: { serialize: 'odata-id', deserialize: 'records' },
       спрОбъектСтр: { serialize: 'odata-id', deserialize: 'records' },
-      спрПользов: { serialize: 'odata-id', deserialize: 'records' }
+      спрПользов: { serialize: 'odata-id', deserialize: 'records' },
+      тЧПлЗаНаД: { serialize: false, deserialize: 'records' }
     };
 
     return $.extend(true, {}, parentAttrs, attrs);

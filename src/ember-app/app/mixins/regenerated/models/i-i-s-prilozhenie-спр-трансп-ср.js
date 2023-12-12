@@ -10,7 +10,8 @@ export let Model = Mixin.create({
   грузПодъемВТон: DS.attr('string'),
   код: DS.attr('number'),
   лицеКартНомер: DS.attr('number'),
-  марка: DS.attr('string')
+  марка: DS.attr('string'),
+  наименование: DS.attr('string')
 });
 
 export let ValidationRules = {
@@ -52,6 +53,12 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
+  наименование: {
+    descriptionKey: 'models.i-i-s-prilozhenie-спр-трансп-ср.validations.наименование.__caption__',
+    validators: [
+      validator('ds-error'),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {
@@ -59,17 +66,19 @@ export let defineProjections = function (modelClass) {
     код: attr('Код', { index: 0 }),
     видПеревоз: attr('Вид перевозки', { index: 1 }),
     госНомер: attr('Государственный номер', { index: 2 }),
-    грузПодъемВТон: attr('Грузоподъемность в тоннах', { index: 3 }),
-    марка: attr('Марка', { index: 4 }),
-    лицеКартНомер: attr('Лицензионная карточка (номер)', { index: 5 })
+    наименование: attr('Транспортное средство', { index: 3 }),
+    грузПодъемВТон: attr('Грузоподъемность в тоннах', { index: 4 }),
+    марка: attr('Марка', { index: 5 }),
+    лицеКартНомер: attr('Лицензионная карточка (номер)', { index: 6 })
   });
 
   modelClass.defineProjection('СпрТранспСрL', 'i-i-s-prilozhenie-спр-трансп-ср', {
     код: attr('Код', { index: 0 }),
     видПеревоз: attr('Вид перевозки', { index: 1 }),
     госНомер: attr('Государственный номер', { index: 2 }),
-    грузПодъемВТон: attr('Грузоподъемность в тоннах', { index: 3 }),
-    марка: attr('Марка', { index: 4 }),
-    лицеКартНомер: attr('Лицензионная карточка (номер)', { index: 5 })
+    наименование: attr('Транспортное средство', { index: 3 }),
+    грузПодъемВТон: attr('Грузоподъемность в тоннах', { index: 4 }),
+    марка: attr('Марка', { index: 5 }),
+    лицеКартНомер: attr('Лицензионная карточка (номер)', { index: 6 })
   });
 };

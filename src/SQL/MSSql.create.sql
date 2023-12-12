@@ -25,6 +25,39 @@ CREATE TABLE [СпрКонтрАг] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [ТЧПлЗаНаД] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [ВрПрибытия] VARCHAR(255)  NULL,
+
+	 [ДатПрибыт] DATETIME  NULL,
+
+	 [КолЧасРаб] REAL  NULL,
+
+	 [ОбГруз] REAL  NULL,
+
+	 [ОбъемРаботы] VARCHAR(255)  NULL,
+
+	 [СтЗатрат] VARCHAR(255)  NULL,
+
+	 [СпрВидыРаб] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрЕдИзмер] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрКонтрАг] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрНомен] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрТипТрансСр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СпрТранспСр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [ДокПланЗаНаД] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [СпрТипТрансСр] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
@@ -120,6 +153,8 @@ CREATE TABLE [СпрТранспСр] (
 	 [ЛицеКартНомер] INT  NULL,
 
 	 [Марка] VARCHAR(255)  NULL,
+
+	 [Наименование] VARCHAR(255)  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 
