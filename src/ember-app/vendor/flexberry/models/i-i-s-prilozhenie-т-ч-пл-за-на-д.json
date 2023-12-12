@@ -151,15 +151,15 @@
       ],
       "belongsTo": [
         {
-          "lookupValue": "Номенклатура",
-          "lookupValueField": "номенклатура",
+          "lookupValue": "Имя номенклатуры",
+          "lookupValueField": "имя номенклатуры",
           "relationName": "СпрНомен",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
               "name": "наименование",
-              "caption": "Номенклатура",
+              "caption": "Имя номенклатуры",
               "hidden": false,
               "index": 2
             }
@@ -172,8 +172,8 @@
           "inverse": null
         },
         {
-          "lookupValue": null,
-          "lookupValueField": null,
+          "lookupValue": "Контрагент",
+          "lookupValueField": "контрагент",
           "relationName": "СпрКонтрАг",
           "belongsTo": [],
           "hidden": false,
@@ -186,7 +186,7 @@
             }
           ],
           "index": 3,
-          "type": "default",
+          "type": "standard",
           "caption": "Контрагент",
           "name": "спрКонтрАг",
           "relatedTo": "i-i-s-prilozhenie-спр-контр-аг",

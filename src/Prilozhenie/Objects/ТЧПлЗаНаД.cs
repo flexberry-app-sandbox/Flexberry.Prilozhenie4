@@ -32,7 +32,7 @@ namespace IIS.Prilozhenie
     [View("ТчПлЗаНаДE", new string[] {
             "СтЗатрат as \'Статья затрат\'",
             "СпрНомен as \'Номенклатура\'",
-            "СпрНомен.Наименование as \'Номенклатура\'",
+            "СпрНомен.Наименование as \'Имя номенклатуры\'",
             "СпрКонтрАг as \'Контрагент\'",
             "СпрКонтрАг.Наименование as \'Контрагент\'",
             "СпрВидыРаб as \'Виды работы\'",
@@ -47,7 +47,8 @@ namespace IIS.Prilozhenie
             "ОбГруз as \'Объем груза\'",
             "СпрЕдИзмер as \'Единица измерения\'",
             "СпрЕдИзмер.Наименование as \'Единица измерения\'"})]
-    [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрНомен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номенклатура")]
+    [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрНомен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Имя номенклатуры")]
+    [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрКонтрАг", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Контрагент")]
     public class ТЧПлЗаНаД : ICSSoft.STORMNET.DataObject
     {
         

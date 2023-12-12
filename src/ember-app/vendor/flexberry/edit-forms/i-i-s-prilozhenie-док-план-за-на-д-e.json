@@ -26,7 +26,7 @@
     },
     {
       "master": "спрНомен",
-      "displayAttributeName": "номенклатура",
+      "displayAttributeName": "имя номенклатуры",
       "required": true,
       "relationName": "ТЧПлЗаНаД.СпрНомен",
       "projection": "СпрНоменL",
@@ -34,7 +34,7 @@
     },
     {
       "master": "спрКонтрАг",
-      "displayAttributeName": null,
+      "displayAttributeName": "контрагент",
       "required": true,
       "relationName": "ТЧПлЗаНаД.СпрКонтрАг",
       "projection": "СпрКонтрАгL",
