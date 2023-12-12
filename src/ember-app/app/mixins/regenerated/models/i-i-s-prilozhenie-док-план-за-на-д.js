@@ -82,7 +82,10 @@ export let defineProjections = function (modelClass) {
     тЧПлЗаНаД: hasMany('i-i-s-prilozhenie-т-ч-пл-за-на-д', 'План задач на день', {
       спрНомен: belongsTo('i-i-s-prilozhenie-спр-номен', 'Номенклатура', {
         наименование: attr('Номенклатура', { index: 1 })
-      }, { index: 0, displayMemberPath: 'номенклатура' })
+      }, { index: 0, displayMemberPath: 'номенклатура' }),
+      спрВидыРаб: belongsTo('i-i-s-prilozhenie-спр-виды-раб', 'Виды работы', {
+        наименование: attr('Виды работы', { index: 3 })
+      }, { index: 2, displayMemberPath: 'виды работы' })
     })
   });
 

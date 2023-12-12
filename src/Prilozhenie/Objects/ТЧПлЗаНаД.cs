@@ -31,8 +31,11 @@ namespace IIS.Prilozhenie
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТчПлЗаНаДE", new string[] {
             "СпрНомен as \'Номенклатура\'",
-            "СпрНомен.Наименование as \'Номенклатура\'"})]
+            "СпрНомен.Наименование as \'Номенклатура\'",
+            "СпрВидыРаб as \'Виды работы\'",
+            "СпрВидыРаб.Наименование as \'Виды работы\'"})]
     [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрНомен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номенклатура")]
+    [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрВидыРаб", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Виды работы")]
     public class ТЧПлЗаНаД : ICSSoft.STORMNET.DataObject
     {
         

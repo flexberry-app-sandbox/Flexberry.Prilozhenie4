@@ -19,6 +19,18 @@ export default EditFormController.extend({
           };
           break;
 
+        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрВидыРаб':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'виды работы',
+            required: true,
+            relationName: 'спрВидыРаб',
+            projection: 'СпрВидыРабL',
+            autocomplete: true,
+          };
+          break;
+
       }
     }
 

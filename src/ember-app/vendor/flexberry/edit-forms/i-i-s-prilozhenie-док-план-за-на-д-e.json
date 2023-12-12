@@ -31,6 +31,14 @@
       "relationName": "ТЧПлЗаНаД.СпрНомен",
       "projection": "СпрНоменL",
       "detailModelName": "i-i-s-prilozhenie-т-ч-пл-за-на-д"
+    },
+    {
+      "master": "спрВидыРаб",
+      "displayAttributeName": "виды работы",
+      "required": true,
+      "relationName": "ТЧПлЗаНаД.СпрВидыРаб",
+      "projection": "СпрВидыРабL",
+      "detailModelName": "i-i-s-prilozhenie-т-ч-пл-за-на-д"
     }
   ],
   "external": false,
