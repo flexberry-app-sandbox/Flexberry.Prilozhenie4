@@ -39,6 +39,14 @@
       "relationName": "ТЧПлЗаНаД.СпрВидыРаб",
       "projection": "СпрВидыРабL",
       "detailModelName": "i-i-s-prilozhenie-т-ч-пл-за-на-д"
+    },
+    {
+      "master": "спрКонтрАг",
+      "displayAttributeName": "контрагенты",
+      "required": true,
+      "relationName": "ТЧПлЗаНаД.СпрКонтрАг",
+      "projection": "СпрКонтрАгL",
+      "detailModelName": "i-i-s-prilozhenie-т-ч-пл-за-на-д"
     }
   ],
   "external": false,

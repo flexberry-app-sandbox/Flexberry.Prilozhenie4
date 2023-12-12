@@ -118,6 +118,9 @@ export let defineProjections = function (modelClass) {
     }, { index: 0, displayMemberPath: 'номенклатура' }),
     спрВидыРаб: belongsTo('i-i-s-prilozhenie-спр-виды-раб', 'Виды работы', {
       наименование: attr('Виды работы', { index: 3 })
-    }, { index: 2, displayMemberPath: 'виды работы' })
+    }, { index: 2, displayMemberPath: 'виды работы' }),
+    спрКонтрАг: belongsTo('i-i-s-prilozhenie-спр-контр-аг', 'Контрагенты', {
+      наименование: attr('Контрагенты', { index: 5 })
+    }, { index: 4, displayMemberPath: 'контрагенты' })
   });
 };

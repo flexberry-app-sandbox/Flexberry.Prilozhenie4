@@ -31,6 +31,18 @@ export default EditFormController.extend({
           };
           break;
 
+        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрКонтрАг':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'контрагенты',
+            required: true,
+            relationName: 'спрКонтрАг',
+            projection: 'СпрКонтрАгL',
+            autocomplete: true,
+          };
+          break;
+
       }
     }
 

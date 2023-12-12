@@ -28,53 +28,55 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-спр-контр-аг-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-контр-аг-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-контр-аг-l.title'),
-            icon: 'book',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-спр-тип-транс-ср-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-тип-транс-ср-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-тип-транс-ср-l.title'),
-            icon: 'address card',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-спр-пользов-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-пользов-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-пользов-l.title'),
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-спр-виды-раб-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-виды-раб-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-виды-раб-l.title'),
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-спр-объект-стр-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-объект-стр-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-объект-стр-l.title'),
-            icon: 'folder open',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-спр-номен-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-номен-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-номен-l.title'),
-            icon: 'folder open',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-спр-ед-измер-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-ед-измер-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-ед-измер-l.title'),
-            icon: 'calendar',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-спр-трансп-ср-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-трансп-ср-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-спр-трансп-ср-l.title'),
-            icon: 'edit',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-док-план-за-на-д-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-док-план-за-на-д-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-док-план-за-на-д-l.title'),
-            icon: 'chart line',
+            icon: 'address card',
             children: null
           }]
         }
