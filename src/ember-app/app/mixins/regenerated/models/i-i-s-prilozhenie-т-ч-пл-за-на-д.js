@@ -117,24 +117,24 @@ export let defineProjections = function (modelClass) {
     спрНомен: belongsTo('i-i-s-prilozhenie-спр-номен', 'Номенклатура', {
       наименование: attr('Номенклатура', { index: 2 })
     }, { index: 1, displayMemberPath: 'номенклатура' }),
-    спрВидыРаб: belongsTo('i-i-s-prilozhenie-спр-виды-раб', 'Виды работы', {
-      наименование: attr('Виды работы', { index: 4 })
-    }, { index: 3, displayMemberPath: 'виды работы' }),
     спрКонтрАг: belongsTo('i-i-s-prilozhenie-спр-контр-аг', 'Контрагенты', {
-      наименование: attr('Контрагенты', { index: 6 })
-    }, { index: 5, displayMemberPath: 'контрагенты' }),
+      наименование: attr('Контрагенты', { index: 4 })
+    }, { index: 3, displayMemberPath: 'контрагенты' }),
+    спрВидыРаб: belongsTo('i-i-s-prilozhenie-спр-виды-раб', 'Виды работы', {
+      наименование: attr('Виды работы', { index: 6 })
+    }, { index: 5, displayMemberPath: 'виды работы' }),
+    объемРаботы: attr('ОбъемРаботы', { index: 7 }),
     спрТранспСр: belongsTo('i-i-s-prilozhenie-спр-трансп-ср', 'Транспортное средство', {
-      наименование: attr('Транспортное средство', { index: 8 })
-    }, { index: 7, displayMemberPath: 'транспортное средство' }),
+      наименование: attr('Транспортное средство', { index: 9 })
+    }, { index: 8, displayMemberPath: 'транспортное средство' }),
     спрТипТрансСр: belongsTo('i-i-s-prilozhenie-спр-тип-транс-ср', 'Типы транспортного средства', {
-      наименование: attr('Типы транспортного средства', { index: 10 })
-    }, { index: 9, displayMemberPath: 'типы транспортного средства' }),
+      наименование: attr('Типы транспортного средства', { index: 11 })
+    }, { index: 10, displayMemberPath: 'типы транспортного средства' }),
+    врПрибытия: attr('Время Прибытия', { index: 12 }),
+    колЧасРаб: attr('Количество часов работы', { index: 13 }),
+    обГруз: attr('Объем работы', { index: 14 }),
     спрЕдИзмер: belongsTo('i-i-s-prilozhenie-спр-ед-измер', 'Единицы измерения', {
-      наименование: attr('Единицы измерения', { index: 12 })
-    }, { index: 11, displayMemberPath: 'единицы измерения' }),
-    объемРаботы: attr('ОбъемРаботы', { index: 13 }),
-    врПрибытия: attr('Время Прибытия', { index: 14 }),
-    колЧасРаб: attr('Количество часов работы', { index: 15 }),
-    обГруз: attr('Объем работы', { index: 16 })
+      наименование: attr('Единицы измерения', { index: 16 })
+    }, { index: 15, displayMemberPath: 'единицы измерения' })
   });
 };

@@ -128,25 +128,25 @@
           "name": "объемРаботы",
           "caption": "ОбъемРаботы",
           "hidden": false,
-          "index": 13
+          "index": 7
         },
         {
           "name": "врПрибытия",
           "caption": "Время Прибытия",
           "hidden": false,
-          "index": 14
+          "index": 12
         },
         {
           "name": "колЧасРаб",
           "caption": "Количество часов работы",
           "hidden": false,
-          "index": 15
+          "index": 13
         },
         {
           "name": "обГруз",
           "caption": "Объем работы",
           "hidden": false,
-          "index": 16
+          "index": 14
         }
       ],
       "belongsTo": [
@@ -172,27 +172,6 @@
           "inverse": null
         },
         {
-          "lookupValue": "Виды работы",
-          "lookupValueField": "виды работы",
-          "relationName": "СпрВидыРаб",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "наименование",
-              "caption": "Виды работы",
-              "hidden": false,
-              "index": 4
-            }
-          ],
-          "index": 3,
-          "type": "standard",
-          "caption": "Виды работы",
-          "name": "спрВидыРаб",
-          "relatedTo": "i-i-s-prilozhenie-спр-виды-раб",
-          "inverse": null
-        },
-        {
           "lookupValue": "Контрагенты",
           "lookupValueField": "контрагенты",
           "relationName": "СпрКонтрАг",
@@ -203,14 +182,35 @@
               "name": "наименование",
               "caption": "Контрагенты",
               "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Контрагенты",
+          "name": "спрКонтрАг",
+          "relatedTo": "i-i-s-prilozhenie-спр-контр-аг",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Виды работы",
+          "lookupValueField": "виды работы",
+          "relationName": "СпрВидыРаб",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Виды работы",
+              "hidden": false,
               "index": 6
             }
           ],
           "index": 5,
           "type": "standard",
-          "caption": "Контрагенты",
-          "name": "спрКонтрАг",
-          "relatedTo": "i-i-s-prilozhenie-спр-контр-аг",
+          "caption": "Виды работы",
+          "name": "спрВидыРаб",
+          "relatedTo": "i-i-s-prilozhenie-спр-виды-раб",
           "inverse": null
         },
         {
@@ -224,10 +224,10 @@
               "name": "наименование",
               "caption": "Транспортное средство",
               "hidden": false,
-              "index": 8
+              "index": 9
             }
           ],
-          "index": 7,
+          "index": 8,
           "type": "standard",
           "caption": "Транспортное средство",
           "name": "спрТранспСр",
@@ -245,10 +245,10 @@
               "name": "наименование",
               "caption": "Типы транспортного средства",
               "hidden": false,
-              "index": 10
+              "index": 11
             }
           ],
-          "index": 9,
+          "index": 10,
           "type": "standard",
           "caption": "Типы транспортного средства",
           "name": "спрТипТрансСр",
@@ -266,10 +266,10 @@
               "name": "наименование",
               "caption": "Единицы измерения",
               "hidden": false,
-              "index": 12
+              "index": 16
             }
           ],
-          "index": 11,
+          "index": 15,
           "type": "standard",
           "caption": "Единицы измерения",
           "name": "спрЕдИзмер",

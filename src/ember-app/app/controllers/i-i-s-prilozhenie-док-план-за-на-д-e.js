@@ -19,18 +19,6 @@ export default EditFormController.extend({
           };
           break;
 
-        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрВидыРаб':
-          cellComponent.componentProperties = {
-            choose: 'showLookupDialog',
-            remove: 'removeLookupValue',
-            displayAttributeName: 'виды работы',
-            required: true,
-            relationName: 'спрВидыРаб',
-            projection: 'СпрВидыРабL',
-            autocomplete: true,
-          };
-          break;
-
         case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрКонтрАг':
           cellComponent.componentProperties = {
             choose: 'showLookupDialog',
@@ -39,6 +27,18 @@ export default EditFormController.extend({
             required: true,
             relationName: 'спрКонтрАг',
             projection: 'СпрКонтрАгL',
+            autocomplete: true,
+          };
+          break;
+
+        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрВидыРаб':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'виды работы',
+            required: true,
+            relationName: 'спрВидыРаб',
+            projection: 'СпрВидыРабL',
             autocomplete: true,
           };
           break;
