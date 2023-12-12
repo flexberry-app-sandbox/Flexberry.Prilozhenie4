@@ -47,6 +47,30 @@
       "relationName": "ТЧПлЗаНаД.СпрКонтрАг",
       "projection": "СпрКонтрАгL",
       "detailModelName": "i-i-s-prilozhenie-т-ч-пл-за-на-д"
+    },
+    {
+      "master": "спрТранспСр",
+      "displayAttributeName": "транспортное средство",
+      "required": true,
+      "relationName": "ТЧПлЗаНаД.СпрТранспСр",
+      "projection": "СпрТранспСрL",
+      "detailModelName": "i-i-s-prilozhenie-т-ч-пл-за-на-д"
+    },
+    {
+      "master": "спрТипТрансСр",
+      "displayAttributeName": "типы транспортного средства",
+      "required": true,
+      "relationName": "ТЧПлЗаНаД.СпрТипТрансСр",
+      "projection": "СпрТипТрансСрL",
+      "detailModelName": "i-i-s-prilozhenie-т-ч-пл-за-на-д"
+    },
+    {
+      "master": "спрЕдИзмер",
+      "displayAttributeName": "единицы измерения",
+      "required": true,
+      "relationName": "ТЧПлЗаНаД.СпрЕдИзмер",
+      "projection": "СпрЕдИзмерL",
+      "detailModelName": "i-i-s-prilozhenie-т-ч-пл-за-на-д"
     }
   ],
   "external": false,

@@ -88,7 +88,16 @@ export let defineProjections = function (modelClass) {
       }, { index: 2, displayMemberPath: 'виды работы' }),
       спрКонтрАг: belongsTo('i-i-s-prilozhenie-спр-контр-аг', 'Контрагенты', {
         наименование: attr('Контрагенты', { index: 5 })
-      }, { index: 4, displayMemberPath: 'контрагенты' })
+      }, { index: 4, displayMemberPath: 'контрагенты' }),
+      спрТранспСр: belongsTo('i-i-s-prilozhenie-спр-трансп-ср', 'Транспортное средство', {
+        наименование: attr('Транспортное средство', { index: 7 })
+      }, { index: 6, displayMemberPath: 'транспортное средство' }),
+      спрТипТрансСр: belongsTo('i-i-s-prilozhenie-спр-тип-транс-ср', 'Типы транспортного средства', {
+        наименование: attr('Типы транспортного средства', { index: 9 })
+      }, { index: 8, displayMemberPath: 'типы транспортного средства' }),
+      спрЕдИзмер: belongsTo('i-i-s-prilozhenie-спр-ед-измер', 'Единицы измерения', {
+        наименование: attr('Единицы измерения', { index: 11 })
+      }, { index: 10, displayMemberPath: 'единицы измерения' })
     })
   });
 

@@ -181,6 +181,69 @@
           "name": "спрКонтрАг",
           "relatedTo": "i-i-s-prilozhenie-спр-контр-аг",
           "inverse": null
+        },
+        {
+          "lookupValue": "Транспортное средство",
+          "lookupValueField": "транспортное средство",
+          "relationName": "СпрТранспСр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Транспортное средство",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Транспортное средство",
+          "name": "спрТранспСр",
+          "relatedTo": "i-i-s-prilozhenie-спр-трансп-ср",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Типы транспортного средства",
+          "lookupValueField": "типы транспортного средства",
+          "relationName": "СпрТипТрансСр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Типы транспортного средства",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Типы транспортного средства",
+          "name": "спрТипТрансСр",
+          "relatedTo": "i-i-s-prilozhenie-спр-тип-транс-ср",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Единицы измерения",
+          "lookupValueField": "единицы измерения",
+          "relationName": "СпрЕдИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Единицы измерения",
+              "hidden": false,
+              "index": 11
+            }
+          ],
+          "index": 10,
+          "type": "standard",
+          "caption": "Единицы измерения",
+          "name": "спрЕдИзмер",
+          "relatedTo": "i-i-s-prilozhenie-спр-ед-измер",
+          "inverse": null
         }
       ],
       "hasMany": []

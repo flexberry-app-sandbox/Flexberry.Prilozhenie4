@@ -35,10 +35,19 @@ namespace IIS.Prilozhenie
             "СпрВидыРаб as \'Виды работы\'",
             "СпрВидыРаб.Наименование as \'Виды работы\'",
             "СпрКонтрАг as \'Контрагенты\' on \'Контрагенты\'",
-            "СпрКонтрАг.Наименование as \'Контрагенты\'"})]
+            "СпрКонтрАг.Наименование as \'Контрагенты\'",
+            "СпрТранспСр as \'Транспортное средство\'",
+            "СпрТранспСр.Наименование as \'Транспортное средство\'",
+            "СпрТипТрансСр as \'Типы транспортного средства\'",
+            "СпрТипТрансСр.Наименование as \'Типы транспортного средства\'",
+            "СпрЕдИзмер as \'Единицы измерения\'",
+            "СпрЕдИзмер.Наименование as \'Единицы измерения\'"})]
     [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрНомен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номенклатура")]
     [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрВидыРаб", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Виды работы")]
     [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрКонтрАг", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Контрагенты")]
+    [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрТранспСр", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Транспортное средство")]
+    [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрТипТрансСр", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Типы транспортного средства")]
+    [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрЕдИзмер", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Единицы измерения")]
     public class ТЧПлЗаНаД : ICSSoft.STORMNET.DataObject
     {
         

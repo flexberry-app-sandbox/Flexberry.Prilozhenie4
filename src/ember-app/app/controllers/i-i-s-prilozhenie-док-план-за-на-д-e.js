@@ -43,6 +43,42 @@ export default EditFormController.extend({
           };
           break;
 
+        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрТранспСр':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'транспортное средство',
+            required: true,
+            relationName: 'спрТранспСр',
+            projection: 'СпрТранспСрL',
+            autocomplete: true,
+          };
+          break;
+
+        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрТипТрансСр':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'типы транспортного средства',
+            required: true,
+            relationName: 'спрТипТрансСр',
+            projection: 'СпрТипТрансСрL',
+            autocomplete: true,
+          };
+          break;
+
+        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрЕдИзмер':
+          cellComponent.componentProperties = {
+            choose: 'showLookupDialog',
+            remove: 'removeLookupValue',
+            displayAttributeName: 'единицы измерения',
+            required: true,
+            relationName: 'спрЕдИзмер',
+            projection: 'СпрЕдИзмерL',
+            autocomplete: true,
+          };
+          break;
+
       }
     }
 
