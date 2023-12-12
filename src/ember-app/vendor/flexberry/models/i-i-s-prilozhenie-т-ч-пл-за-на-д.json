@@ -123,6 +123,30 @@
           "caption": "Статья Затрат",
           "hidden": false,
           "index": 0
+        },
+        {
+          "name": "объемРаботы",
+          "caption": "ОбъемРаботы",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "врПрибытия",
+          "caption": "Время Прибытия",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "колЧасРаб",
+          "caption": "Количество часов работы",
+          "hidden": false,
+          "index": 15
+        },
+        {
+          "name": "обГруз",
+          "caption": "Объем работы",
+          "hidden": false,
+          "index": 16
         }
       ],
       "belongsTo": [

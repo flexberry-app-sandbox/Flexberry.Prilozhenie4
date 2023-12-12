@@ -42,7 +42,11 @@ namespace IIS.Prilozhenie
             "СпрТипТрансСр as \'Типы транспортного средства\'",
             "СпрТипТрансСр.Наименование as \'Типы транспортного средства\'",
             "СпрЕдИзмер as \'Единицы измерения\'",
-            "СпрЕдИзмер.Наименование as \'Единицы измерения\'"})]
+            "СпрЕдИзмер.Наименование as \'Единицы измерения\'",
+            "ОбъемРаботы as \'ОбъемРаботы\'",
+            "ВрПрибытия as \'Время Прибытия\'",
+            "КолЧасРаб as \'Количество часов работы\'",
+            "ОбГруз as \'Объем работы\'"})]
     [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрНомен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номенклатура")]
     [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрВидыРаб", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Виды работы")]
     [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрКонтрАг", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Контрагенты")]

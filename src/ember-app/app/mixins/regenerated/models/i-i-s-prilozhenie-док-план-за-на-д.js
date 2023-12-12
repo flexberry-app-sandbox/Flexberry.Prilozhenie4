@@ -98,7 +98,11 @@ export let defineProjections = function (modelClass) {
       }, { index: 9, displayMemberPath: 'типы транспортного средства' }),
       спрЕдИзмер: belongsTo('i-i-s-prilozhenie-спр-ед-измер', 'Единицы измерения', {
         наименование: attr('Единицы измерения', { index: 12 })
-      }, { index: 11, displayMemberPath: 'единицы измерения' })
+      }, { index: 11, displayMemberPath: 'единицы измерения' }),
+      объемРаботы: attr('ОбъемРаботы', { index: 13 }),
+      врПрибытия: attr('Время Прибытия', { index: 14 }),
+      колЧасРаб: attr('Количество часов работы', { index: 15 }),
+      обГруз: attr('Объем работы', { index: 16 })
     })
   });
 
