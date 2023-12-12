@@ -36,13 +36,19 @@ namespace IIS.Prilozhenie
             "СпрКонтрАг as \'Организация\'",
             "СпрКонтрАг.Наименование as \'Организация\'",
             "СпрОбъектСтр as \'Объект строительства\'",
-            "СпрОбъектСтр.Наименование as \'Объект строительства\'"})]
+            "СпрОбъектСтр.Наименование as \'Объект строительства\'",
+            "СпрПользов as \'Автор\'",
+            "СпрПользов.ФИО as \'Автор\'",
+            "СпрПользов.Должность as \'Должность\'"})]
+    [MasterViewDefineAttribute("ДокПланЗаНаДE", "СпрПользов", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Автор")]
     [View("ДокПланЗаНаДL", new string[] {
             "Номер as \'Номер\'",
             "Дата as \'Дата\'",
             "Время as \'Время\'",
             "СпрКонтрАг.Наименование as \'Организация\'",
-            "СпрОбъектСтр.Наименование as \'Объект строительства\'"})]
+            "СпрОбъектСтр.Наименование as \'Объект строительства\'",
+            "СпрПользов.ФИО as \'Автор\'",
+            "СпрПользов.Должность as \'Должность\'"})]
     public class ДокПланЗаНаД : ICSSoft.STORMNET.DataObject
     {
         
@@ -51,6 +57,8 @@ namespace IIS.Prilozhenie
         private int fНомер;
         
         private System.DateTime fДата;
+        
+        private IIS.Prilozhenie.СпрПользов fСпрПользов;
         
         private IIS.Prilozhenie.СпрОбъектСтр fСпрОбъектСтр;
         
@@ -220,6 +228,40 @@ namespace IIS.Prilozhenie
                 // *** Start programmer edit section *** (ДокПланЗаНаД.СпрОбъектСтр Set end)
 
                 // *** End programmer edit section *** (ДокПланЗаНаД.СпрОбъектСтр Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Док план за на Д.
+        /// </summary>
+        // *** Start programmer edit section *** (ДокПланЗаНаД.СпрПользов CustomAttributes)
+
+        // *** End programmer edit section *** (ДокПланЗаНаД.СпрПользов CustomAttributes)
+        [PropertyStorage(new string[] {
+                "СпрПользов"})]
+        [NotNull()]
+        public virtual IIS.Prilozhenie.СпрПользов СпрПользов
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ДокПланЗаНаД.СпрПользов Get start)
+
+                // *** End programmer edit section *** (ДокПланЗаНаД.СпрПользов Get start)
+                IIS.Prilozhenie.СпрПользов result = this.fСпрПользов;
+                // *** Start programmer edit section *** (ДокПланЗаНаД.СпрПользов Get end)
+
+                // *** End programmer edit section *** (ДокПланЗаНаД.СпрПользов Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ДокПланЗаНаД.СпрПользов Set start)
+
+                // *** End programmer edit section *** (ДокПланЗаНаД.СпрПользов Set start)
+                this.fСпрПользов = value;
+                // *** Start programmer edit section *** (ДокПланЗаНаД.СпрПользов Set end)
+
+                // *** End programmer edit section *** (ДокПланЗаНаД.СпрПользов Set end)
             }
         }
         

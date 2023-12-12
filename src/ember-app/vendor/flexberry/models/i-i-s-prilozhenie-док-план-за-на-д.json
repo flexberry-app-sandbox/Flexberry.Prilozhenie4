@@ -48,6 +48,13 @@
       "name": "спрОбъектСтр",
       "relatedTo": "i-i-s-prilozhenie-спр-объект-стр",
       "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "спрПользов",
+      "relatedTo": "i-i-s-prilozhenie-спр-пользов",
+      "inverse": null
     }
   ],
   "hasMany": [],
@@ -117,6 +124,33 @@
           "name": "спрОбъектСтр",
           "relatedTo": "i-i-s-prilozhenie-спр-объект-стр",
           "inverse": null
+        },
+        {
+          "lookupValue": "Автор",
+          "lookupValueField": "автор",
+          "relationName": "СпрПользов",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Автор",
+              "hidden": false,
+              "index": 8
+            },
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Автор",
+          "name": "спрПользов",
+          "relatedTo": "i-i-s-prilozhenie-спр-пользов",
+          "inverse": null
         }
       ],
       "hasMany": []
@@ -185,6 +219,33 @@
           "caption": "Объект строительства",
           "name": "спрОбъектСтр",
           "relatedTo": "i-i-s-prilozhenie-спр-объект-стр",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СпрПользов",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Автор",
+              "hidden": false,
+              "index": 5
+            },
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Автор",
+          "name": "спрПользов",
+          "relatedTo": "i-i-s-prilozhenie-спр-пользов",
           "inverse": null
         }
       ],

@@ -107,4 +107,42 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.спрОбъектСтр "наименование" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-док-план-за-на-д-e.спрПользов-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.спрПользов
+      displayAttributeName="автор"
+      autocomplete=true
+      relationName="спрПользов"
+      projection="СпрПользовL"
+      title=(t "forms.i-i-s-prilozhenie-док-план-за-на-д-e.спрПользов-caption")
+      readonly=readonly
+      componentName="спрПользовLookup"
+      class=(if (v-get validationModel "спрПользов" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-док-план-за-на-д-e-спрПользов=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "спрПользов" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрПользов.фИО
+      class=(if (v-get validationModel.спрПользов "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-док-план-за-на-д-e.спрПользов.фИО-caption")
+      data-test-i-i-s-prilozhenie-док-план-за-на-д-e-спрПользов-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрПользов "фИО" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.спрПользов.должность
+      class=(if (v-get validationModel.спрПользов "должность" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-док-план-за-на-д-e.спрПользов.должность-caption")
+      data-test-i-i-s-prilozhenie-док-план-за-на-д-e-спрПользов-должность=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.спрПользов "должность" "message")}}
+  </div>
 </form>

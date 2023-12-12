@@ -9,7 +9,8 @@ export let Model = Mixin.create({
   дата: DS.attr('date'),
   номер: DS.attr('number'),
   спрКонтрАг: DS.belongsTo('i-i-s-prilozhenie-спр-контр-аг', { inverse: null, async: false }),
-  спрОбъектСтр: DS.belongsTo('i-i-s-prilozhenie-спр-объект-стр', { inverse: null, async: false })
+  спрОбъектСтр: DS.belongsTo('i-i-s-prilozhenie-спр-объект-стр', { inverse: null, async: false }),
+  спрПользов: DS.belongsTo('i-i-s-prilozhenie-спр-пользов', { inverse: null, async: false })
 });
 
 export let ValidationRules = {
@@ -47,6 +48,13 @@ export let ValidationRules = {
       validator('presence', true),
     ],
   },
+  спрПользов: {
+    descriptionKey: 'models.i-i-s-prilozhenie-док-план-за-на-д.validations.спрПользов.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {
@@ -59,7 +67,11 @@ export let defineProjections = function (modelClass) {
     }, { index: 3 }),
     спрОбъектСтр: belongsTo('i-i-s-prilozhenie-спр-объект-стр', 'Объект строительства', {
       наименование: attr('Объект строительства', { index: 6 })
-    }, { index: 5 })
+    }, { index: 5 }),
+    спрПользов: belongsTo('i-i-s-prilozhenie-спр-пользов', 'Автор', {
+      фИО: attr('Автор', { index: 8 }),
+      должность: attr('Должность', { index: 9 })
+    }, { index: 7, displayMemberPath: 'автор' })
   });
 
   modelClass.defineProjection('ДокПланЗаНаДL', 'i-i-s-prilozhenie-док-план-за-на-д', {
@@ -71,6 +83,10 @@ export let defineProjections = function (modelClass) {
     }, { index: -1, hidden: true }),
     спрОбъектСтр: belongsTo('i-i-s-prilozhenie-спр-объект-стр', 'Объект строительства', {
       наименование: attr('Объект строительства', { index: 4 })
+    }, { index: -1, hidden: true }),
+    спрПользов: belongsTo('i-i-s-prilozhenie-спр-пользов', 'Автор', {
+      фИО: attr('Автор', { index: 5 }),
+      должность: attr('Должность', { index: 6 })
     }, { index: -1, hidden: true })
   });
 };

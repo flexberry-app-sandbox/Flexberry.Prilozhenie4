@@ -151,6 +151,8 @@ CREATE TABLE "ДокПланЗаНаД"
 
 	"Дата" DATE NULL,
 
+	"СпрПользов" RAW(16) NOT NULL,
+
 	"СпрОбъектСтр" RAW(16) NOT NULL,
 
 	"СпрКонтрАг" RAW(16) NOT NULL,
@@ -371,6 +373,11 @@ ALTER TABLE "СпрНомен"
 	ADD CONSTRAINT "СпрНомен_FСпрЕ_737" FOREIGN KEY ("СпрЕдИзмер") REFERENCES "СпрЕдИзмер" ("primaryKey");
 
 CREATE INDEX "СпрНомен_IСпр_9298" on "СпрНомен" ("СпрЕдИзмер");
+
+ALTER TABLE "ДокПланЗаНаД"
+	ADD CONSTRAINT "ДокПланЗаНаД__8523" FOREIGN KEY ("СпрПользов") REFERENCES "СпрПользов" ("primaryKey");
+
+CREATE INDEX "ДокПланЗаНаД__4393" on "ДокПланЗаНаД" ("СпрПользов");
 
 ALTER TABLE "ДокПланЗаНаД"
 	ADD CONSTRAINT "ДокПланЗаНаД__5210" FOREIGN KEY ("СпрОбъектСтр") REFERENCES "СпрОбъектСтр" ("primaryKey");

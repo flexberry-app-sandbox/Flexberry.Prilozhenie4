@@ -138,6 +138,8 @@ CREATE TABLE [ДокПланЗаНаД] (
 
 	 [СпрОбъектСтр] UNIQUEIDENTIFIER  NOT NULL,
 
+	 [СпрПользов] UNIQUEIDENTIFIER  NOT NULL,
+
 	 PRIMARY KEY ([primaryKey]))
 
 

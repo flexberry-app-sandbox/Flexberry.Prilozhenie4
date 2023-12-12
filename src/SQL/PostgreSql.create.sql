@@ -81,6 +81,7 @@ CREATE TABLE ДокПланЗаНаД (
  Время VARCHAR(255) NULL,
  Номер INT NULL,
  Дата TIMESTAMP(3) NULL,
+ СпрПользов UUID NOT NULL,
  СпрОбъектСтр UUID NOT NULL,
  СпрКонтрАг UUID NOT NULL,
  PRIMARY KEY (primaryKey));
@@ -198,6 +199,9 @@ CREATE INDEX Indexa7034f7bceece13908821312b7a842afbbddb0e3 on СпрВидыРа
 
  ALTER TABLE СпрНомен ADD CONSTRAINT FK840c81fedf20e0a82183dd6fd7f6953d4bf35c43 FOREIGN KEY (СпрЕдИзмер) REFERENCES СпрЕдИзмер; 
 CREATE INDEX Index840c81fedf20e0a82183dd6fd7f6953d4bf35c43 on СпрНомен (СпрЕдИзмер); 
+
+ ALTER TABLE ДокПланЗаНаД ADD CONSTRAINT FK81fbb905ae7456eaeeaa1838ff132654ebc92ff2 FOREIGN KEY (СпрПользов) REFERENCES СпрПользов; 
+CREATE INDEX Index81fbb905ae7456eaeeaa1838ff132654ebc92ff2 on ДокПланЗаНаД (СпрПользов); 
 
  ALTER TABLE ДокПланЗаНаД ADD CONSTRAINT FKffa0aecf8e314e28f0eadc399661f74c23f443d7 FOREIGN KEY (СпрОбъектСтр) REFERENCES СпрОбъектСтр; 
 CREATE INDEX Indexffa0aecf8e314e28f0eadc399661f74c23f443d7 on ДокПланЗаНаД (СпрОбъектСтр); 
