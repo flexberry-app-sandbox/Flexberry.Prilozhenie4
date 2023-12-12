@@ -11,70 +11,10 @@ export default EditFormController.extend({
           cellComponent.componentProperties = {
             choose: 'showLookupDialog',
             remove: 'removeLookupValue',
-            displayAttributeName: 'наименование',
+            displayAttributeName: 'номенклатура',
             required: true,
             relationName: 'спрНомен',
             projection: 'СпрНоменL',
-            autocomplete: true,
-          };
-          break;
-
-        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрКонтрАг':
-          cellComponent.componentProperties = {
-            choose: 'showLookupDialog',
-            remove: 'removeLookupValue',
-            displayAttributeName: 'контрагент',
-            required: true,
-            relationName: 'спрКонтрАг',
-            projection: 'СпрКонтрАгL',
-            autocomplete: true,
-          };
-          break;
-
-        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрВидыРаб':
-          cellComponent.componentProperties = {
-            choose: 'showLookupDialog',
-            remove: 'removeLookupValue',
-            displayAttributeName: '',
-            required: true,
-            relationName: 'спрВидыРаб',
-            projection: 'СпрВидыРабL',
-            autocomplete: true,
-          };
-          break;
-
-        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрТранспСр':
-          cellComponent.componentProperties = {
-            choose: 'showLookupDialog',
-            remove: 'removeLookupValue',
-            displayAttributeName: '',
-            required: true,
-            relationName: 'спрТранспСр',
-            projection: 'СпрТранспСрL',
-            autocomplete: true,
-          };
-          break;
-
-        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрТипТрансСр':
-          cellComponent.componentProperties = {
-            choose: 'showLookupDialog',
-            remove: 'removeLookupValue',
-            displayAttributeName: '',
-            required: true,
-            relationName: 'спрТипТрансСр',
-            projection: 'СпрТипТрансСрL',
-            autocomplete: true,
-          };
-          break;
-
-        case 'i-i-s-prilozhenie-т-ч-пл-за-на-д+спрЕдИзмер':
-          cellComponent.componentProperties = {
-            choose: 'showLookupDialog',
-            remove: 'removeLookupValue',
-            displayAttributeName: '',
-            required: true,
-            relationName: 'спрЕдИзмер',
-            projection: 'СпрЕдИзмерL',
             autocomplete: true,
           };
           break;
