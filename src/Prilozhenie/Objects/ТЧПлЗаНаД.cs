@@ -30,6 +30,7 @@ namespace IIS.Prilozhenie
     [Caption("Табличная часть плановая заявка на день")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ТчПлЗаНаДE", new string[] {
+            "СтЗатрат as \'Статья Затрат\'",
             "СпрНомен as \'Номенклатура\'",
             "СпрНомен.Наименование as \'Номенклатура\'",
             "СпрВидыРаб as \'Виды работы\'",

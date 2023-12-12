@@ -113,23 +113,24 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ТчПлЗаНаДE', 'i-i-s-prilozhenie-т-ч-пл-за-на-д', {
+    стЗатрат: attr('Статья Затрат', { index: 0 }),
     спрНомен: belongsTo('i-i-s-prilozhenie-спр-номен', 'Номенклатура', {
-      наименование: attr('Номенклатура', { index: 1 })
-    }, { index: 0, displayMemberPath: 'номенклатура' }),
+      наименование: attr('Номенклатура', { index: 2 })
+    }, { index: 1, displayMemberPath: 'номенклатура' }),
     спрВидыРаб: belongsTo('i-i-s-prilozhenie-спр-виды-раб', 'Виды работы', {
-      наименование: attr('Виды работы', { index: 3 })
-    }, { index: 2, displayMemberPath: 'виды работы' }),
+      наименование: attr('Виды работы', { index: 4 })
+    }, { index: 3, displayMemberPath: 'виды работы' }),
     спрКонтрАг: belongsTo('i-i-s-prilozhenie-спр-контр-аг', 'Контрагенты', {
-      наименование: attr('Контрагенты', { index: 5 })
-    }, { index: 4, displayMemberPath: 'контрагенты' }),
+      наименование: attr('Контрагенты', { index: 6 })
+    }, { index: 5, displayMemberPath: 'контрагенты' }),
     спрТранспСр: belongsTo('i-i-s-prilozhenie-спр-трансп-ср', 'Транспортное средство', {
-      наименование: attr('Транспортное средство', { index: 7 })
-    }, { index: 6, displayMemberPath: 'транспортное средство' }),
+      наименование: attr('Транспортное средство', { index: 8 })
+    }, { index: 7, displayMemberPath: 'транспортное средство' }),
     спрТипТрансСр: belongsTo('i-i-s-prilozhenie-спр-тип-транс-ср', 'Типы транспортного средства', {
-      наименование: attr('Типы транспортного средства', { index: 9 })
-    }, { index: 8, displayMemberPath: 'типы транспортного средства' }),
+      наименование: attr('Типы транспортного средства', { index: 10 })
+    }, { index: 9, displayMemberPath: 'типы транспортного средства' }),
     спрЕдИзмер: belongsTo('i-i-s-prilozhenie-спр-ед-измер', 'Единицы измерения', {
-      наименование: attr('Единицы измерения', { index: 11 })
-    }, { index: 10, displayMemberPath: 'единицы измерения' })
+      наименование: attr('Единицы измерения', { index: 12 })
+    }, { index: 11, displayMemberPath: 'единицы измерения' })
   });
 };
