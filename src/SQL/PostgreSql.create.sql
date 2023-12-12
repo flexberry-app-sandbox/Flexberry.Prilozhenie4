@@ -69,9 +69,9 @@ CREATE TABLE СпрОбъектСтр (
 
 CREATE TABLE СпрНомен (
  primaryKey UUID NOT NULL,
- Наименование VARCHAR(255) NULL,
  Описание VARCHAR(255) NULL,
  Код INT NULL,
+ Наименование VARCHAR(255) NULL,
  СпрЕдИзмер UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 

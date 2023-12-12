@@ -43,11 +43,11 @@ namespace IIS.Prilozhenie
     public class СпрНомен : ICSSoft.STORMNET.DataObject
     {
         
-        private string fНаименование;
-        
         private string fОписание;
         
         private int fКод;
+        
+        private string fНаименование;
         
         private IIS.Prilozhenie.СпрЕдИзмер fСпрЕдИзмер;
         

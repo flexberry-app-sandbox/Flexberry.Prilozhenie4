@@ -115,8 +115,8 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ТчПлЗаНаДE', 'i-i-s-prilozhenie-т-ч-пл-за-на-д', {
     стЗатрат: attr('Статья затрат', { index: 0 }),
     спрНомен: belongsTo('i-i-s-prilozhenie-спр-номен', 'Номенклатура', {
-      наименование: attr('Имя номенклатуры', { index: 2 })
-    }, { index: 1, displayMemberPath: 'имя номенклатуры' }),
+      наименование: attr('Наименование', { index: 2 })
+    }, { index: 1, displayMemberPath: 'наименование' }),
     спрКонтрАг: belongsTo('i-i-s-prilozhenie-спр-контр-аг', 'Контрагент', {
       наименование: attr('Контрагент', { index: 4 })
     }, { index: 3, displayMemberPath: 'контрагент' }),

@@ -129,11 +129,11 @@ CREATE TABLE "СпрНомен"
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"Наименование" NVARCHAR2(255) NULL,
-
 	"Описание" NVARCHAR2(255) NULL,
 
 	"Код" NUMBER(10) NULL,
+
+	"Наименование" NVARCHAR2(255) NULL,
 
 	"СпрЕдИзмер" RAW(16) NOT NULL,
 

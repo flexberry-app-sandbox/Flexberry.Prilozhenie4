@@ -151,15 +151,15 @@
       ],
       "belongsTo": [
         {
-          "lookupValue": "Имя номенклатуры",
-          "lookupValueField": "имя номенклатуры",
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
           "relationName": "СпрНомен",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
               "name": "наименование",
-              "caption": "Имя номенклатуры",
+              "caption": "Наименование",
               "hidden": false,
               "index": 2
             }
