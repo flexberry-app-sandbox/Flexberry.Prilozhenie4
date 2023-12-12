@@ -36,11 +36,11 @@ CREATE TABLE "ТЧПлЗаНаД"
 
 	"ОбъемРаботы" NVARCHAR2(255) NULL,
 
-	"ВрПрибытия" NVARCHAR2(255) NULL,
+	"ОбГруз" FLOAT(53) NULL,
 
 	"КолЧасРаб" FLOAT(53) NULL,
 
-	"ОбГруз" FLOAT(53) NULL,
+	"ВрПрибытия" NVARCHAR2(255) NULL,
 
 	"ДатПрибыт" DATE NULL,
 

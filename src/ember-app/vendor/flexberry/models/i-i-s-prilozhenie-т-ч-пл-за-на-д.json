@@ -151,8 +151,8 @@
       ],
       "belongsTo": [
         {
-          "lookupValue": null,
-          "lookupValueField": null,
+          "lookupValue": "Номенклатура",
+          "lookupValueField": "номенклатура",
           "relationName": "СпрНомен",
           "belongsTo": [],
           "hidden": false,
@@ -165,7 +165,7 @@
             }
           ],
           "index": 1,
-          "type": "default",
+          "type": "standard",
           "caption": "Номенклатура",
           "name": "спрНомен",
           "relatedTo": "i-i-s-prilozhenie-спр-номен",

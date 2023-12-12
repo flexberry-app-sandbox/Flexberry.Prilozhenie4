@@ -47,6 +47,7 @@ namespace IIS.Prilozhenie
             "ОбГруз as \'Объем груза\'",
             "СпрЕдИзмер as \'Единица измерения\'",
             "СпрЕдИзмер.Наименование as \'Единица измерения\'"})]
+    [MasterViewDefineAttribute("ТчПлЗаНаДE", "СпрНомен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номенклатура")]
     public class ТЧПлЗаНаД : ICSSoft.STORMNET.DataObject
     {
         
@@ -54,11 +55,11 @@ namespace IIS.Prilozhenie
         
         private string fОбъемРаботы;
         
-        private string fВрПрибытия;
+        private float fОбГруз;
         
         private float fКолЧасРаб;
         
-        private float fОбГруз;
+        private string fВрПрибытия;
         
         private System.DateTime fДатПрибыт;
         

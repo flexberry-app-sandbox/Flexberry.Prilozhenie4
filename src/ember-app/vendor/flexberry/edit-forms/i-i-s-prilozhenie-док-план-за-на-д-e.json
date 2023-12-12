@@ -26,7 +26,7 @@
     },
     {
       "master": "спрНомен",
-      "displayAttributeName": null,
+      "displayAttributeName": "номенклатура",
       "required": true,
       "relationName": "ТЧПлЗаНаД.СпрНомен",
       "projection": "СпрНоменL",
